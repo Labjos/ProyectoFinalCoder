@@ -1,0 +1,480 @@
+body {
+	width: 1280px;
+	background-color: #b3b2b4;
+	font-family: Roboto, Arial, Allura;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-size: 30px;
+	color: #FF0040;
+	font-family: Roboto, Arial, Allura;
+}
+
+h2 {
+	font-size: 22px;
+	font-family: Roboto, Arial;
+	color: white;
+}
+
+h3 {
+	font-size: 40px;
+	font-family: Allura;
+	Color:  hsl(325, 79%, 48%);
+	animation-duration: 5s;
+	animation-name: intro; 
+}
+
+h4 {
+		font-size: 30px;
+		font-family: Roboto, Arial;
+		Color: #ffffff;
+		animation-duration: 5s;
+		animation-name: intro;		
+}
+
+@keyframes intro {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+#menu {
+	font-family: Roboto;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #FF0040;
+}
+#btnVino {
+	width: 200px;
+	height: 50px;
+	background-color: #BDBDBD;
+	float: left;
+	margin-left: 250px;
+	margin-top: 30px;
+}
+
+#bigMenu {
+	width: 400px;
+	height: 500px;
+	background-color: #FF0000;
+}
+
+#fondoMenu {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 1280px;
+	height: 80px;
+	background-color: black;
+}
+#segundoMenu {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 600px;
+	height: 80px;
+	background-color:#ffffff;
+}
+#menuPrincipal {
+	width: 600px;
+	height: 40px;
+	background-color: #FF0040;
+	float: right;
+	margin-right: 0px;
+	margin-top: 20px;
+}
+#menuPrincipal ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#menuPrincipal ul li {
+	display: inline;
+}
+#menuPrincipal ul li a{
+	display: inline-block;
+	padding: 7px 12px;
+	color: #000000;
+	font-size: 17px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#menuPrincipal ul li a:hover {
+	color: #ffffff;
+}
+
+ #barra { 
+	display: flex;
+	flex-direction: row-reverse;
+	width: 1280px;
+	height: 120px;
+	background-color: #000000;
+}
+#logo {
+	width: 200px;
+	height: 100px;
+	margin-top: 10px;
+	
+}
+#vinoenPersona {
+	display: grid;
+	grid-template-areas:
+	"tituloVino tituloVino"
+	"fotoVino queEsVino "
+	"fotoVino propuestaVino";
+	grid-template-columns: 500px 780px ;
+	grid-template-rows: 50px 240px 280px;
+	background-color: black;
+	margin-top: 3px;
+} 
+#tituloVino {
+	grid-area:tituloVino;
+	animation-name: intro;
+	margin-left: 60px;
+}
+	#fotoVino {
+	grid-area: fotoVino;	
+	background-color: #000000;
+}	
+#queEsVino {
+	grid-area:queEsVino ;
+	background-color: blueviolet;
+}
+#propuestaVino {
+	grid-area: propuestaVino;
+	background-color: burlywood;
+}
+
+#granFondo {
+	width: 1280px;
+	height: 650px; 
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../imagenes/fondo.jpeg);
+}
+#segundoFondo {
+	width: 100%;
+	height: 50%;
+	background-image: url(../imagenes/CopadeVino.mp4);
+}
+#fondo {
+	background-position: center;
+}
+
+#nuevasPublicaciones {
+	width: 100%;
+	height: 400px;
+	background-color: #217728;
+}
+
+#textoVino {
+	width: 300px;
+	height: 400px;
+	text-align: right;
+	float: right;
+}
+#contacto {
+	display: grid;
+	grid-template-areas:
+	"tituloContacto tituloContacto tituloContacto"
+	"fotoContacto fotoContacto fotoContacto"
+	"proveedores distribuidores clientes"
+	"redes redes redes";
+	grid-template-columns: 320px 320px 320px;
+	grid-template-rows: 50px 300px 300px 150px;
+	background-color: #ffffff;
+	margin-top: 3px;
+}
+#tituloContacto {
+	grid-area: tituloContacto;
+	margin-left: 60px;
+}
+#fotoContacto {
+	grid-area: fotoContacto;
+	background-color: bisque;
+}
+#proveedores {
+	grid-area: proveedores;
+	background-color: chocolate;
+	animation-name: efecto;
+	animation-duration: 20s;
+}
+#distribuidores {
+	grid-area: distribuidores;
+	background-color: darkgreen;
+	animation-name: efecto;
+	animation-duration: 20s;
+}
+#clientes {
+	grid-area: clientes;
+	background-color: darkorchid;
+	animation-name: efecto;
+	animation-duration: 20s;
+}
+#redes {
+	grid-area: redes;
+	background-color: darkred;
+}
+
+.pie {
+	width: 1280px;
+	height: 120px;
+	background-color: #ffffff;
+	margin-top: 3px;
+}
+.textoSecundario {
+	width: 600px;
+	height: 60px;
+	color: blue;
+	text-align: left;
+}
+.textoTerciario {
+	width: 700px;
+	height: 50px;
+	color: rgb(48, 23, 5);
+	text-decoration: underline;
+	text-align: right;
+}
+.tituloBlanco {
+	color: #ffffff;
+	text-align: center;
+}
+.tituloNegro {
+	color:black;
+	text-align: left;
+}
+
+#bodegas {
+	width: 1280px;
+	height: 200px;
+	background-color: cadetblue;
+}
+#productos {
+	display: grid;
+	grid-template-areas:
+	"tituloBodegas tituloBodegas"
+	"fotoBodegas infoProductos "
+	"fotoBodegas infoServicios";
+	grid-template-columns: 360px 600px ;
+	grid-template-rows: 50px 400px 300px;
+	background-color: #ffffff;
+	margin-top: 3px;
+}
+#tituloBodegas {
+	grid-area: tituloBodegas;
+	margin-left: 60px;
+}
+#fotoBodegas {
+	grid-area: fotoBodegas;
+	background-color: #655678;
+}
+#infoProductos {
+	grid-area: infoProductos;
+	background-color: cadetblue;
+}
+#infoServicios {
+	grid-area: infoServicios;
+	background-color: darkgoldenrod;
+}
+
+.articulos {
+	width: 300px;
+	height: 300px;
+	background-color: beige;
+	position: relative;
+	display: inline-block;
+	border: solid 1px #000000;
+	animation-name: efecto;
+	animation-duration: 20s;
+}
+#agenda {
+	display: grid;
+	grid-template-areas:
+	"tituloAgenda tituloAgenda"
+	"fotoAgenda seViene "
+	"fotoAgenda eventos"
+	"fotoAgenda buscadorEventos";
+	grid-template-columns: 420px 800px;
+	grid-template-rows: 50px 300px 300px 300px;
+	background-color: #ffffff;
+	margin-top: 3px;
+}
+#tituloAgenda {
+	grid-area: tituloAgenda;
+	margin-left: 60px;
+}
+#fotoAgenda {
+	grid-area: fotoAgenda;
+	background-color: darkorange;
+}
+#seViene {
+	grid-area: seViene;
+	background-color: deeppink;
+}
+#eventos {
+	grid-area: eventos;
+	background-color: dimgray;
+}
+#buscadorEventos {
+	grid-area: buscadorEventos;
+	background-color: forestgreen;
+}
+#comunidad {
+	display: grid;
+	grid-template-areas:
+	"tituloComunidad tituloComunidad tituloComunidad"
+	"fotoComunidad fotoComunidad fotoComunidad"
+	"quienesSomos beneficios siguenos"
+	"promoComunidad promoComunidad promoComunidad";
+	grid-template-columns: 407px 407px 407px;
+	grid-template-rows: 50px 300px 300px 150px;
+	background-color: #ffffff;
+	margin-top: 3px;
+} 
+#tituloComunidad {
+	grid-area: tituloComunidad;
+	margin-left: 60px;
+}
+#fotoComunidad {
+	grid-area: fotoComunidad;
+	background-color: aqua;
+}
+#quienesSomos {
+	grid-area: quienesSomos;
+	background-color: chartreuse;
+}
+#beneficios {
+	grid-area: beneficios;
+	background-color: cornflowerblue;
+}
+#siguenos {
+	grid-area: siguenos;
+	background: darkcyan;
+}
+#promoComunidad {
+	grid-area: promoComunidad;
+	background-color: darkkhaki;
+}
+.articulosVarios {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 1280px;
+	height: 800px;
+	background-color: #FF0040;
+	margin-top: 20px;
+}
+.bodega {
+	display: grid;
+	grid-template-areas:
+	"fotoBodega info info"
+	"fotoBodega lineas lineas"
+	"fotoBodega botellas botellas";
+	grid-template-columns: 360px 300px 300px;
+	grid-template-rows: 150px 300px 300px;
+	width: 960px;
+	height: auto;
+	background-color:#217728;
+}
+#fotoBodega {
+	grid-area: fotoBodega;
+	background-color: #FF0000;
+}
+#info {
+	grid-area: info;
+	background-color: aqua;
+	margin-top: 20px;
+}
+#lineas {
+	grid-area: lineas;
+	background-color: cadetblue;
+	display: flex;
+	justify-content: space-around;
+}
+.lineaBodega {
+	background-color: #BDBDBD;
+	width: 260px;
+	height: 200px;
+	margin-top: 20px;
+}
+#botellas {
+	grid-area: botellas;
+	background-color: chocolate;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.botella {
+	width: 60px;
+	height: 80px;
+	background-color: azure;
+}
+#blog {
+	display: grid;
+	grid-template-areas:
+	"tituloBlog tituloBlog tituloBlog"
+	"autora autora autora"
+	"fotoBlog fotoBlog fotoBlog"
+	"articulos articulos articulos"
+	"buscadorBlog buscadorBlog buscadorBlog";
+	grid-template-columns: 320px 320px 320px;
+	grid-template-rows: 50px 200px 300px 300px 150px;
+	background-color: #ffffff;
+	margin-top: 3px; 
+}
+
+#tituloBlog {
+	grid-area: tituloBlog;
+	margin-left: 60px;
+}
+#autora {
+	grid-area: autora;
+	background-color: deeppink;
+}
+#fotoBlog {
+	grid-area: fotoBlog;
+	background-color: dimgrey;
+}
+#articulos {
+	grid-area: articulos;
+	background-color: gold;
+}
+#buscadorBlog {
+	grid-area: buscadorBlog;
+	background-color: hotpink;
+}
+
+#page {
+	width: 150px;
+	height: 30px;
+	background-color: #FF0040;
+	float: right;
+	margin-right: 20px;
+	margin-top: 100px;
+}
+.articulos {
+	width: 300px;
+	height: 300px;
+	background-color: beige;
+	position: relative;
+	display: inline-block;
+	border: solid 1px #000000;
+	animation-name: efecto;
+	animation-duration: 20s;
+}
+@keyframes efecto {
+	0% {width: 100px;}
+	25% {width: 150px;background-color: #BDBDBD;}
+	50% {width: 200px;background-color: aquamarine;}
+	75% {width: 250px;background-color: burlywood;}
+	100% {width: 300px;background-color: coral;}
+}
+.btn {
+	background-color: #f8d407da ;
+	float: left;
+	margin-left: 350px;
+	margin-top: 300px;
+}
