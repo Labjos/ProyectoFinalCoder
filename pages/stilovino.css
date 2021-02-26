@@ -5,7 +5,6 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
-
 h1 {
 	font-size: 30px;
 	color: #FF0040;
@@ -19,47 +18,89 @@ h2 {
 }
 
 h3 {
-	font-size: 40px;
+	font-size: 60px;
 	font-family: Allura;
-	Color:  hsl(325, 79%, 48%);
+	Color: #ffffff;
 	animation-duration: 5s;
 	animation-name: intro; 
 }
 
 h4 {
-		font-size: 30px;
-		font-family: Roboto, Arial;
-		Color: #ffffff;
-		animation-duration: 5s;
-		animation-name: intro;		
+	font-size: 30px;
+	font-family: Roboto, Arial;
+	Color: #ffffff;
+	animation-duration: 5s;
+	animation-name: intro;		
 }
-
-@keyframes intro {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
+h5 {
+	font-size: 35px;
+	font-family: Allura;
+	Color: #ffffff;
+	text-align: center;
+}
+h6 {
+	font-size: 25px;
+	font-family: Oswald;
+	Color: #000;
+	text-align: left;
+}
+#edad {
+	width: 350px;
+	height: 80px;
+	background-color:rgba(255,255,255,0.3);
+	float: left;
+	margin-top: 50px;
+	margin-left: 500px;
+}
+#textoEdad {
+	width: 300px;
+	height: 30px;
+    margin-top: 25px;
+	margin-left: 30px;
+}
+#textoE {
+	text-decoration: none;
+}
+#infoAlcohol {
+	width: 220px;
+	height: 100px;
+	float: left;
+    margin-top: 90px;
+	margin-left: 30px;
+	text-decoration: none;
+	list-style-type: none;
+}
+#textoIntro {
+	width: 300px;
+	height: 30px;
+	float: left;
+	margin-top: 360px;
+	font-family: Allura;
+	color: #ffffff;
+	font-size: 60px;
+	animation-name: intro;
+	animation-duration: 7s;
+}
+#logoVmds {
+	width: 100px;
+	height: 170px;
+	background-image: url(/imagenes/logoVmds.png);
+	float: right;
+	margin-top: 30px;
+	margin-right: 120px;
 }
 #menu {
 	font-family: Roboto;
 	font-size: 20px;
 	text-align: center;
 	text-decoration: none;
+	list-style-type: none;
 	color: #FF0040;
 }
-#btnVino {
-	width: 200px;
-	height: 50px;
-	background-color: #BDBDBD;
-	float: left;
-	margin-left: 250px;
-	margin-top: 30px;
-}
-
 #bigMenu {
 	width: 400px;
 	height: 500px;
-	background-color: #FF0000;
 }
-
 #fondoMenu {
 	display: flex;
 	flex-direction: row-reverse;
@@ -69,15 +110,15 @@ h4 {
 }
 #segundoMenu {
 	display: flex;
-	flex-direction: row-reverse;
-	width: 600px;
+	flex-direction:row-reverse;
+	width: 1280px;
 	height: 80px;
-	background-color:#ffffff;
+	background-image: url(/imagenes/imagen1.jpeg);
 }
 #menuPrincipal {
-	width: 600px;
+	width: 780px;
 	height: 40px;
-	background-color: #FF0040;
+	background-color: #DF013A;
 	float: right;
 	margin-right: 0px;
 	margin-top: 20px;
@@ -92,64 +133,139 @@ h4 {
 }
 #menuPrincipal ul li a{
 	display: inline-block;
-	padding: 7px 12px;
+	padding: 7px 23px;
 	color: #000000;
-	font-size: 17px;
+	font-size: 18px;
 	text-decoration: none;
 	font-weight: bold;
 }
 #menuPrincipal ul li a:hover {
 	color: #ffffff;
 }
-
- #barra { 
+#menuPie {
+	width: 1100px;
+	height: 80px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+#menuPie ul {
+	display: inline;
+}
+#menuPie ul li{
+	display: inline-block;
+	padding: 5px 10px;
+}
+#barra { 
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: reverse;
 	width: 1280px;
 	height: 120px;
-	background-color: #000000;
+	background-color: #ffffff;
 }
 #logo {
-	width: 200px;
-	height: 100px;
-	margin-top: 10px;
-	
+	width: 110px;
+	height: 110px;
+	margin-top: 5px;
+	margin-left: 50px;
+}
+
+@keyframes intro {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 #vinoenPersona {
 	display: grid;
 	grid-template-areas:
-	"tituloVino tituloVino"
-	"fotoVino queEsVino "
-	"fotoVino propuestaVino";
-	grid-template-columns: 500px 780px ;
-	grid-template-rows: 50px 240px 280px;
-	background-color: black;
+	"textoVino slideVino slideVino"
+	"promoVino propuestaVino propuestaVino"
+	"queEsVino imagenVino ofertaVino";
+	grid-template-columns: 500px 280px 500px;
+	grid-template-rows: 377px 200px 340px;
+	background-color: #000000;
 	margin-top: 3px;
 } 
 #tituloVino {
-	grid-area:tituloVino;
 	animation-name: intro;
-	margin-left: 60px;
+	width: 400px;
+	height: 50px;
+	margin-top: 5px;
+	margin-right: 20px;
 }
-	#fotoVino {
-	grid-area: fotoVino;	
+#slideVino {
+	grid-area: slideVino;	
 	background-color: #000000;
+	width: 780px;
+	height: 374px;
 }	
+#textoPersona {
+	width: 400px;
+	height: 220px;
+	float: left;
+	margin-top: 120px;
+	margin-left: 50px;
+}
+#promoVino {
+	grid-area: promoVino;
+	background-image: url(/imagenes/amarone.jpg);
+	margin-top: 5px;
+}
 #queEsVino {
 	grid-area:queEsVino ;
-	background-color: blueviolet;
+	width: 500px;
+	height: 335px;
+	background-color: #ffffff;
+	margin-top: 5px;
+}
+#textoQue {
+	width: 380px;
+	height: 200px;
+	float: left;
+	margin-left: 60px;
+	margin-top: 100px;
 }
 #propuestaVino {
 	grid-area: propuestaVino;
-	background-color: burlywood;
+	background-color: #ffffff;
+	width: 780px;
+	height: 195px;
+	margin-top: 5px;
 }
-
-#granFondo {
+#textoPropuesta {
+	width: 600px;
+	height: 120px;
+	float: left;
+	margin-left: 90px;
+	margin-top: 40px;
+}
+#imagenVino {
+	grid-area: imagenVino;
+	width: 280px;
+	height: 335px;
+	background-image: url(/imagenes/Fabi.JPG);
+	margin-top: 5px;
+}
+#ofertaVino {
+	grid-area: ofertaVino;
+	width: 500px;
+	height: 335px;
+	background-color: #000000;
+	margin-top: 5px;
+}
+#textoOferta {
+	width: 400px;
+	height: 300px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 30px;
+	text-align:center;
+}
+#fondo {
 	width: 1280px;
 	height: 650px; 
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url(../imagenes/fondo.jpeg);
+	background-image: url(/imagenes/fondo.jpeg);
 }
 #segundoFondo {
 	width: 100%;
@@ -167,26 +283,26 @@ h4 {
 }
 
 #textoVino {
-	width: 300px;
-	height: 400px;
+	width: 500px;
+	height: 377x;
 	text-align: right;
 	float: right;
 }
 #contacto {
 	display: grid;
 	grid-template-areas:
-	"tituloContacto tituloContacto tituloContacto"
 	"fotoContacto fotoContacto fotoContacto"
 	"proveedores distribuidores clientes"
 	"redes redes redes";
-	grid-template-columns: 320px 320px 320px;
-	grid-template-rows: 50px 300px 300px 150px;
+	grid-template-columns: 440px 400px 440px;
+	grid-template-rows: 380px 200px 340px;
 	background-color: #ffffff;
 	margin-top: 3px;
 }
 #tituloContacto {
 	grid-area: tituloContacto;
-	margin-left: 60px;
+	margin-right: 100px;
+	margin-top: 5px;
 }
 #fotoContacto {
 	grid-area: fotoContacto;
@@ -214,11 +330,10 @@ h4 {
 	grid-area: redes;
 	background-color: darkred;
 }
-
 .pie {
 	width: 1280px;
 	height: 120px;
-	background-color: #ffffff;
+	background-color: #DF013A;
 	margin-top: 3px;
 }
 .textoSecundario {
@@ -242,7 +357,6 @@ h4 {
 	color:black;
 	text-align: left;
 }
-
 #bodegas {
 	width: 1280px;
 	height: 200px;
@@ -251,31 +365,52 @@ h4 {
 #productos {
 	display: grid;
 	grid-template-areas:
-	"tituloBodegas tituloBodegas"
-	"fotoBodegas infoProductos "
-	"fotoBodegas infoServicios";
-	grid-template-columns: 360px 600px ;
-	grid-template-rows: 50px 400px 300px;
-	background-color: #ffffff;
+	"fotoBodegas infoBodegas infoBodegas"
+	"infoServicios infoServicios fotoServicios"
+	"infoProductor fotoProducto infoclientes";
+	grid-template-columns: 500px 280px 500px;
+	grid-template-rows: 380px 200px 340px;
+	background-color: #000000;
 	margin-top: 3px;
 }
 #tituloBodegas {
-	grid-area: tituloBodegas;
-	margin-left: 60px;
+	width: 450px;
+	height: 50px;
+	float: right;
+	margin-right: 5px;
+	margin-top: 10px;
 }
 #fotoBodegas {
 	grid-area: fotoBodegas;
-	background-color: #655678;
+	background-color: #000000;
 }
-#infoProductos {
-	grid-area: infoProductos;
-	background-color: cadetblue;
+#infoProductor {
+	grid-area: infoProductor;
+	background-color:#ffffff;
 }
 #infoServicios {
 	grid-area: infoServicios;
-	background-color: darkgoldenrod;
+	background-color:#000000;
+	margin-top: 5px;
 }
-
+#infoBodegas {
+	grid-area: infoBodegas;
+	background-color: #ffffff;
+	margin-top: 5px;
+}
+#fotoServicios {
+	grid-area: fotoServicios;
+	background-color: bisque;
+	margin-top: 5px;
+}
+#fotoProducto {
+	grid-area: fotoProducto;
+	background-color: brown;
+}
+#infoClientes {
+	grid-area: infoClientes;
+	background-color: cornflowerblue;
+}
 .articulos {
 	width: 300px;
 	height: 300px;
@@ -289,50 +424,50 @@ h4 {
 #agenda {
 	display: grid;
 	grid-template-areas:
-	"tituloAgenda tituloAgenda"
 	"fotoAgenda seViene "
 	"fotoAgenda eventos"
 	"fotoAgenda buscadorEventos";
-	grid-template-columns: 420px 800px;
-	grid-template-rows: 50px 300px 300px 300px;
-	background-color: #ffffff;
+	grid-template-columns: 500px 780px;
+	grid-template-rows: 380px 200px 340px;
+	background-color: #000000;
 	margin-top: 3px;
 }
 #tituloAgenda {
 	grid-area: tituloAgenda;
-	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 5px;
 }
 #fotoAgenda {
 	grid-area: fotoAgenda;
-	background-color: darkorange;
+	background-color: #ffffff 
 }
 #seViene {
 	grid-area: seViene;
-	background-color: deeppink;
+	
 }
 #eventos {
 	grid-area: eventos;
-	background-color: dimgray;
+	background-color:#000000;
 }
 #buscadorEventos {
 	grid-area: buscadorEventos;
-	background-color: forestgreen;
+	background-color: #ffffff;
 }
 #comunidad {
 	display: grid;
 	grid-template-areas:
-	"tituloComunidad tituloComunidad tituloComunidad"
 	"fotoComunidad fotoComunidad fotoComunidad"
 	"quienesSomos beneficios siguenos"
 	"promoComunidad promoComunidad promoComunidad";
-	grid-template-columns: 407px 407px 407px;
-	grid-template-rows: 50px 300px 300px 150px;
+	grid-template-columns: 440px 400px 440px;
+	grid-template-rows: 300px 300px 150px;
 	background-color: #ffffff;
 	margin-top: 3px;
 } 
 #tituloComunidad {
 	grid-area: tituloComunidad;
-	margin-left: 60px;
+	margin-right: 50px;
+	margin-top: 5px;
 }
 #fotoComunidad {
 	grid-area: fotoComunidad;
@@ -415,20 +550,19 @@ h4 {
 #blog {
 	display: grid;
 	grid-template-areas:
-	"tituloBlog tituloBlog tituloBlog"
 	"autora autora autora"
 	"fotoBlog fotoBlog fotoBlog"
 	"articulos articulos articulos"
 	"buscadorBlog buscadorBlog buscadorBlog";
-	grid-template-columns: 320px 320px 320px;
-	grid-template-rows: 50px 200px 300px 300px 150px;
+	grid-template-columns: 440px 400px 440px;
+	grid-template-rows:200px 300px 300px 150px;
 	background-color: #ffffff;
 	margin-top: 3px; 
 }
-
 #tituloBlog {
 	grid-area: tituloBlog;
-	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 5px;
 }
 #autora {
 	grid-area: autora;
@@ -446,7 +580,6 @@ h4 {
 	grid-area: buscadorBlog;
 	background-color: hotpink;
 }
-
 #page {
 	width: 150px;
 	height: 30px;
@@ -471,10 +604,4 @@ h4 {
 	50% {width: 200px;background-color: aquamarine;}
 	75% {width: 250px;background-color: burlywood;}
 	100% {width: 300px;background-color: coral;}
-}
-.btn {
-	background-color: #f8d407da ;
-	float: left;
-	margin-left: 350px;
-	margin-top: 300px;
 }
