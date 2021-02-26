@@ -398,6 +398,11 @@ h6 {
 	background-color: #ffffff;
 	margin-top: 5px;
 }
+#zonaBodegas {
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+}
 #fotoServicios {
 	grid-area: fotoServicios;
 	background-color: bisque;
@@ -506,11 +511,13 @@ h6 {
 	"fotoBodega info info"
 	"fotoBodega lineas lineas"
 	"fotoBodega botellas botellas";
-	grid-template-columns: 360px 300px 300px;
-	grid-template-rows: 150px 300px 300px;
-	width: 960px;
-	height: auto;
-	background-color:#217728;
+	grid-template-columns: 500px 300px 480px;
+	grid-template-rows: 380px 200px 340px;
+}
+#tituloBodega {
+	grid-area: tituloComunidad;
+	margin-right: 200px;
+	margin-top: 5px;
 }
 #fotoBodega {
 	grid-area: fotoBodega;
@@ -519,7 +526,6 @@ h6 {
 #info {
 	grid-area: info;
 	background-color: aqua;
-	margin-top: 20px;
 }
 #lineas {
 	grid-area: lineas;
