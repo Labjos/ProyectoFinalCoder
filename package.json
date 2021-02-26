@@ -1,11 +1,10 @@
 {
-  "name": "proyecto",
+  "name": "proyecto-alt",
   "version": "1.0.0",
-  "description": "Proyecto Coder",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+    "build-css": "node-sass --include-path scss scss/stiloVinoenPersona.scss css/stilovino.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
@@ -13,5 +12,15 @@
   "dependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Labjos/ProyectoFinalCoder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Labjos/ProyectoFinalCoder/issues"
+  },
+  "homepage": "https://github.com/Labjos/ProyectoFinalCoder#readme",
+  "description": ""
 }
