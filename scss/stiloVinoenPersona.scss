@@ -2,13 +2,13 @@
 
 body {
 	width: 1280px;
-	background-color: #b3b2b4;
+	background-color: #848484;
 	font-family: Roboto, Arial, Allura;
 	margin-left: auto;
 	margin-right: auto;
 }
 h1 {
-	font-size: 30px;
+	font-size: 40px;
 	color: #FF0040;
 	font-family: Roboto, Arial, Allura;
 }
@@ -18,7 +18,6 @@ h2 {
 	font-family: Roboto, Arial;
 	color: white;
 }
-
 h3 {
 	font-size: 60px;
 	font-family: Allura;
@@ -26,7 +25,6 @@ h3 {
 	animation-duration: 5s;
 	animation-name: intro; 
 }
-
 h4 {
 	font-size: 30px;
 	font-family: Roboto, Arial;
@@ -91,6 +89,13 @@ h6 {
 	margin-top: 30px;
 	margin-right: 120px;
 }
+video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: -1;
+}
 #menu {
 	font-family: Roboto;
 	font-size: 20px;
@@ -99,9 +104,26 @@ h6 {
 	list-style-type: none;
 	color: #FF0040;
 }
-#bigMenu {
-	width: 400px;
-	height: 500px;
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-decoration: none;
+}
+#menu ul li {
+	display: inline;
+	text-decoration: none;
+}
+#menu ul li a{
+	display: inline-block;
+	padding: 30px 50px;
+	color: #ffffff;
+	font-size: 24px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#menu ul li a:hover {
+	color: #f7077f;
 }
 #fondoMenu {
 	display: flex;
@@ -132,10 +154,11 @@ h6 {
 }
 #menuPrincipal ul li {
 	display: inline;
+
 }
 #menuPrincipal ul li a{
 	display: inline-block;
-	padding: 7px 23px;
+	padding: 7px 20px;
 	color: #000000;
 	font-size: 18px;
 	text-decoration: none;
@@ -145,8 +168,8 @@ h6 {
 	color: #ffffff;
 }
 #menuPie {
-	width: 1100px;
-	height: 80px;
+	width: 1000px;
+	height: 90px;
 	float: right;
 	margin-top: 30px;
 	margin-right: 20px;
@@ -156,22 +179,38 @@ h6 {
 }
 #menuPie ul li{
 	display: inline-block;
-	padding: 5px 10px;
+	padding: 5px 7px;
+}
+#fondoTextoIntro {
+	width: 400px;
+	height: 300px;
+	background-color:rgba(209, 203, 208, 0.2);
+	float: right;
+	margin-top: 0px;
+	margin-right: 50px;
+}
+#textoBienvenida {
+	width: 300px;
+	height: 300px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 50px;
 }
 #barra { 
 	display: flex;
 	flex-direction: reverse;
 	width: 1280px;
-	height: 120px;
-	background-color: #ffffff;
+	height: 100px;
+	background-color:rgba(228, 220, 226, 0.3);
+	float: left;
+	margin-top: 30px;
 }
 #logo {
 	width: 110px;
-	height: 110px;
-	margin-top: 5px;
+	height: 200px;
+	margin-top: 20px;
 	margin-left: 50px;
 }
-
 @keyframes intro {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
@@ -269,21 +308,24 @@ h6 {
 	margin-right: auto;
 	background-image: url(/imagenes/fondo.jpeg);
 }
-#segundoFondo {
+#fondoUnico {
 	width: 100%;
 	height: 50%;
 	background-image: url(../imagenes/CopadeVino.mp4);
 }
+#segundoFondo {
+	width: 1280px;
+	height: 100px;
+	background-image: url(/imagenes/imagen1.jpeg);
+}
 #fondo {
 	background-position: center;
 }
-
 #nuevasPublicaciones {
 	width: 100%;
 	height: 400px;
 	background-color: #217728;
 }
-
 #textoVino {
 	width: 500px;
 	height: 377x;
@@ -293,12 +335,12 @@ h6 {
 #contacto {
 	display: grid;
 	grid-template-areas:
-	"fotoContacto fotoContacto fotoContacto"
 	"proveedores distribuidores clientes"
+	"fotoContacto fotoContacto fotoContacto"
 	"redes redes redes";
-	grid-template-columns: 440px 400px 440px;
+	grid-template-columns: 427px 426px 427px;
 	grid-template-rows: 380px 200px 340px;
-	background-color: #ffffff;
+	background-color:#000000;
 	margin-top: 3px;
 }
 #tituloContacto {
@@ -308,35 +350,78 @@ h6 {
 }
 #fotoContacto {
 	grid-area: fotoContacto;
-	background-color: bisque;
+	background-color:#000000;
+}
+#textoFotoContacto {
+	width: 550px;
+	height: 120px;
+	float: right;
+	margin-right: 150px;
+	margin-top: 40px;
+}
+#imagenFoto {
+	width: 427px;
+	height: 200px;
+	background-image: url(/imagenes/amarone.jpg);
 }
 #proveedores {
 	grid-area: proveedores;
-	background-color: chocolate;
-	animation-name: efecto;
-	animation-duration: 20s;
+	background-color: #ffffff;
+	float: right;
+}
+#fotoProveedores {
+	width: 425px;
+	height: 170px;
+	background-image: url(/imagenes/productor.jpg);
+}
+#textoProveedores {
+	width: 360px;
+	height: 170px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
 }
 #distribuidores {
 	grid-area: distribuidores;
-	background-color: darkgreen;
-	animation-name: efecto;
-	animation-duration: 20s;
+	background-color:#ffffff;
+}
+#fotoDistribuidores {
+	width: 425px;
+	height: 170px;
+	background-image: url(/imagenes/distribuidor.jpg);
+}
+#textoDistribuidores {
+	width: 360px;
+	height: 180px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 40px;
 }
 #clientes {
 	grid-area: clientes;
-	background-color: darkorchid;
-	animation-name: efecto;
-	animation-duration: 20s;
+	background-color: #ffffff;
+}
+#fotoClientes {
+	width: 425px;
+	height: 170px;
+	background-image: url(/imagenes/consumidor.jpg);
+}
+#textoClientesContacto {
+	width: 360px;
+	height: 180px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 40px;
 }
 #redes {
 	grid-area: redes;
-	background-color: darkred;
+	background-color:#ffffff;
 }
 .pie {
 	width: 1280px;
-	height: 120px;
-	background-color: #DF013A;
-	margin-top: 3px;
+	height: 150px;
+	background-color:#DF013A;
+	margin-top: 5px;
 }
 .textoSecundario {
 	width: 600px;
@@ -380,7 +465,7 @@ h6 {
 	height: 50px;
 	float: right;
 	margin-right: 5px;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 #fotoBodegas {
 	grid-area: fotoBodegas;
@@ -398,12 +483,43 @@ h6 {
 #infoBodegas {
 	grid-area: infoBodegas;
 	background-color: #ffffff;
-	margin-top: 5px;
 }
 #zonaBodegas {
 	float: left;
 	margin-left: 50px;
+	margin-top: 20px;
+}
+#textoBodegas {
+	width: 680px;
+	height: 120px;
+	float: left;
+	margin-left: 80px;
+	margin-top: 30px;
+} 
+#textoServicios {
+	width: 600px;
+	height: 100px;
+	float: left;
+	margin-top: 50PX;
+	margin-left: 100PX;
+}
+#textoProductor {
+	width: 350px;
+	height: 250px;
+	float: left;
+	margin-left: 80px;
 	margin-top: 50px;
+}
+#infoClientes {
+	width: 500px;
+	height: 340px;
+}
+#textoClientes {
+	width: 350px;
+	height: 200px;
+	float: left;
+	margin-top: 70px;
+	margin-left: 80px;
 }
 $bodegas :(
 	LosNoques: #534522,
@@ -452,11 +568,6 @@ $varietal:malbec;
 }
 #fotoProducto {
 	grid-area: fotoProducto;
-	background-color: brown;
-}
-#infoClientes {
-	grid-area: infoClientes;
-	background-color: cornflowerblue;
 }
 .articulos {
 	width: 300px;
@@ -494,59 +605,119 @@ $varietal:malbec;
 }
 #eventos {
 	grid-area: eventos;
-	background-color:#000000;
+	background-color:#ffffff;
 }
 #buscadorEventos {
 	grid-area: buscadorEventos;
-	background-color: #ffffff;
+	background-color: #000000;
 }
 #comunidad {
 	display: grid;
 	grid-template-areas:
 	"fotoComunidad fotoComunidad fotoComunidad"
-	"quienesSomos beneficios siguenos"
-	"promoComunidad promoComunidad promoComunidad";
-	grid-template-columns: 440px 400px 440px;
-	grid-template-rows: 300px 300px 150px;
+	"promoComunidad promoComunidad promoComunidad"
+	"quienesSomos beneficios siguenos";
+	grid-template-columns: 427px 426px 427px; 
+	grid-template-rows: 380px 195px 345px;
 	background-color: #ffffff;
 	margin-top: 3px;
 } 
 #tituloComunidad {
-	grid-area: tituloComunidad;
 	margin-right: 50px;
 	margin-top: 5px;
 }
 #fotoComunidad {
 	grid-area: fotoComunidad;
-	background-color: aqua;
 }
 #quienesSomos {
 	grid-area: quienesSomos;
-	background-color: chartreuse;
+	background-color: #000000; 
+}
+#tituloMundo {
+	width: 427px;
+	height: 50px;
+	background-color: #000000;
+}
+#textoTituloMundo {
+	width: 200px;
+	height: 30px;
+	float: left;
+	margin-left: 150px;
+	margin-top: 10px;
+}
+#imagenMundo {
+	width: 420px;
+	height: 145px;
+}
+#textoMundo {
+	width: 425;
+	height: 150px;
+	background-color: #000000;
+}
+#tituloBeneficio {
+	width: 425px;
+	height: 50px;
+	background-color: #000000;
+}
+#textoTituloBeneficio {
+	width: 200px;
+	height: 30px;
+	float: left;
+	margin-left: 150px;
+	margin-top: 10px;
+}
+#imagenBeneficio {
+	width: 424px;
+	height: 145px;
+	background-color: #6e184d;
+}
+#textoBeneficio {
+	width: 425;
+	height: 150px;
+	background-color:#000000;
+}
+#tituloRegistro {
+	width: 425px;
+	height: 50px;
+	background-color: #000000;
+}
+#textoTituloRegistro {
+	width: 200px;
+	height: 30px;
+	float: left;
+	margin-left: 150px;
+	margin-top: 10px;
+}
+#formularioRegistro {
+	width: 425px;
+	height: 295px;
+	background-color: #000000;
 }
 #beneficios {
 	grid-area: beneficios;
-	background-color: cornflowerblue;
+	background-color:#000000;
 }
 #siguenos {
 	grid-area: siguenos;
-	background: darkcyan;
+	background: #000000;
 }
 #promoComunidad {
 	grid-area: promoComunidad;
-	background-color: darkkhaki;
+	background-color: #ffffff;
 }
-.articulosVarios {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	width: 1280px;
-	height: 800px;
-	background-color: #FF0040;
-	margin-top: 20px;
+#textoPromo {
+	width: 700px;
+	height: 110px;
+	float: left;
+	margin-top: 40px;
+	margin-left: 70px;
 }
+#imagenPromoComunidad {
+	width: 427px;
+	height: 195px;
+	background-color: #217728;
+	float: right;
+}	
 .bodega {
 	display: grid;
 	grid-template-areas:
@@ -559,7 +730,6 @@ $varietal:malbec;
 #tituloBodega {
 	grid-area: tituloComunidad;
 	margin-right: 200px;
-	margin-top: 5px;
 }
 #fotoBodega {
 	grid-area: fotoBodega;
@@ -598,12 +768,11 @@ $varietal:malbec;
 #blog {
 	display: grid;
 	grid-template-areas:
-	"autora autora autora"
-	"fotoBlog fotoBlog fotoBlog"
-	"articulos articulos articulos"
-	"buscadorBlog buscadorBlog buscadorBlog";
-	grid-template-columns: 440px 400px 440px;
-	grid-template-rows:200px 300px 300px 150px;
+	"autora autora"
+	"articulos articulos"
+	"buscadorBlog buscadorBlog";
+	grid-template-columns: 500px 780px;
+	grid-template-rows:380px 200px 340px;
 	background-color: #ffffff;
 	margin-top: 3px; 
 }
@@ -614,15 +783,34 @@ $varietal:malbec;
 }
 #autora {
 	grid-area: autora;
-	background-color: deeppink;
+	background-color: #ffffff
 }
-#fotoBlog {
-	grid-area: fotoBlog;
-	background-color: dimgrey;
+#imagenAutora {
+	width: 500px;
+	height: 380px;
+}
+#textoAutora {
+	width: 600px;
+	height: 180px;
+	float: right;
+	margin-right: 90px;
+	margin-top: 80px;
 }
 #articulos {
 	grid-area: articulos;
-	background-color: gold;
+	background-color: #000000;
+}
+#imagenArticuloBlog {
+	width: 500px;
+	height: 200px;
+	background-color: #848484;
+	float: right;
+}
+#textoArticulos {
+	width: 600px;
+	height: 100px;
+	margin-top: 50px;
+	margin-left: 80px;
 }
 #buscadorBlog {
 	grid-area: buscadorBlog;
@@ -652,4 +840,11 @@ $varietal:malbec;
 	50% {width: 200px;background-color: aquamarine;}
 	75% {width: 250px;background-color: burlywood;}
 	100% {width: 300px;background-color: coral;}
+}
+#logoPie {
+	width: 200px;
+	height: 100px;
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
 }

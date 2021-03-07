@@ -86,6 +86,13 @@ h6 {
   margin-top: 30px;
   margin-right: 120px; }
 
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1; }
+
 #menu {
   font-family: Roboto;
   font-size: 20px;
@@ -94,9 +101,26 @@ h6 {
   list-style-type: none;
   color: #FF0040; }
 
-#bigMenu {
-  width: 400px;
-  height: 500px; }
+#menu ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none; }
+
+#menu ul li {
+  display: inline;
+  text-decoration: none; }
+
+#menu ul li a {
+  display: inline-block;
+  padding: 30px 50px;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold; }
+
+#menu ul li a:hover {
+  color: #f7077f; }
 
 #fondoMenu {
   display: flex;
@@ -153,18 +177,35 @@ h6 {
   display: inline-block;
   padding: 5px 7px; }
 
+#fondoTextoIntro {
+  width: 400px;
+  height: 300px;
+  background-color: rgba(209, 203, 208, 0.2);
+  float: right;
+  margin-top: 0px;
+  margin-right: 50px; }
+
+#textoBienvenida {
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 50px; }
+
 #barra {
   display: flex;
   flex-direction: reverse;
   width: 1280px;
-  height: 120px;
-  background-color: #f7099b; }
+  height: 100px;
+  background-color: rgba(228, 220, 226, 0.3);
+  float: left;
+  margin-top: 30px; }
 
 #logo {
-  width: 200px;
-  height: 110px;
-  margin-top: 15px;
-  margin-left: 30px; }
+  width: 110px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 50px; }
 
 @keyframes intro {
   0% {
@@ -262,10 +303,15 @@ h6 {
   margin-right: auto;
   background-image: url(/imagenes/fondo.jpeg); }
 
-#segundoFondo {
+#fondoUnico {
   width: 100%;
   height: 50%;
   background-image: url(../imagenes/CopadeVino.mp4); }
+
+#segundoFondo {
+  width: 1280px;
+  height: 100px;
+  background-image: url(/imagenes/imagen1.jpeg); }
 
 #fondo {
   background-position: center; }
@@ -298,12 +344,12 @@ h6 {
   grid-area: fotoContacto;
   background-color: #000000; }
 
-#textoFoto {
+#textoFotoContacto {
   width: 550px;
   height: 120px;
-  float: left;
-  margin-left: 180px;
-  margin-top: 50px; }
+  float: right;
+  margin-right: 150px;
+  margin-top: 40px; }
 
 #imagenFoto {
   width: 427px;
@@ -352,7 +398,7 @@ h6 {
   height: 170px;
   background-image: url(/imagenes/consumidor.jpg); }
 
-#textoClientes {
+#textoClientesContacto {
   width: 360px;
   height: 180px;
   float: left;
@@ -361,7 +407,7 @@ h6 {
 
 #redes {
   grid-area: redes;
-  background-color: darkred; }
+  background-color: #ffffff; }
 
 .pie {
   width: 1280px;
@@ -690,8 +736,8 @@ span {
 
 #blog {
   display: grid;
-  grid-template-areas: "autora autora autora" "articulos articulos articulos" "buscadorBlog buscadorBlog buscadorBlog";
-  grid-template-columns: 427px 426px 427px;
+  grid-template-areas: "autora autora" "articulos articulos" "buscadorBlog buscadorBlog";
+  grid-template-columns: 500px 780px;
   grid-template-rows: 380px 200px 340px;
   background-color: #ffffff;
   margin-top: 3px; }
@@ -703,15 +749,34 @@ span {
 
 #autora {
   grid-area: autora;
-  background-color: deeppink; }
+  background-color: #ffffff; }
 
-#fotoBlog {
-  grid-area: fotoBlog;
-  background-color: dimgrey; }
+#imagenAutora {
+  width: 500px;
+  height: 380px; }
+
+#textoAutora {
+  width: 600px;
+  height: 180px;
+  float: right;
+  margin-right: 90px;
+  margin-top: 80px; }
 
 #articulos {
   grid-area: articulos;
-  background-color: gold; }
+  background-color: #000000; }
+
+#imagenArticuloBlog {
+  width: 500px;
+  height: 200px;
+  background-color: #848484;
+  float: right; }
+
+#textoArticulos {
+  width: 600px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 80px; }
 
 #buscadorBlog {
   grid-area: buscadorBlog;
@@ -750,3 +815,10 @@ span {
   100% {
     width: 300px;
     background-color: coral; } }
+
+#logoPie {
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px; }
