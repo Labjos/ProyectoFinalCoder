@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>	<header>
     <div id="segundoMenu">
@@ -27,35 +28,89 @@
 <div id="tituloBodega"><h3>Vinos</h3></div>
 </div>
 </header>
-
 	<section class="bodega">
-            <div id="fotoBodega">Foto</div>
-            <div id="info">zona info</div>
-            <div id="lineas">
-            <div class="lineaBodega">Linea Joven</div>
-            <div class="lineaBodega">Linea Intermedia</div>
-            
-    </div>        
-            <div id="botellas">
-                <div class="botella">Malbec</div>
-                <div class="botella">Cabernet</div>
-                <div class="botella">Blend</div>
+            <div id="fotoBodega">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/imagenes/bodegaUno.jpg" class="d-block w-100" alt="Vinos Masi">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/imagenes/bodegaDos.jpg" class="d-block w-100" alt="Vinos Casir">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/imagenes/bodegaTres.jpg" class="d-block w-100" alt="Vinos Los Noques">
+                      </div><div class="carousel-item">
+                        <img src="/imagenes/bodegaCuatro.jpg" class="d-block w-100" alt="Vinos Gieco">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/imagenes/bodegaCinco.jpg" class="d-block w-100" alt="Vinos Trapezio">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
             </div>
-    </section>
-
+            <div id="infoVinos">
+                <div id="textoVinos"><h6>Selecciona la Bodega de tu interés, más información de sus vinos y actividades.</br></br>(LA FORMA MÁS SENCILLA DE COMPRAR)</h6></div>
+	        	<div id="logosVinos">
+			        <nav id="listaVinos" >
+				        <ul>
+					        <li><a href="#bodegaUno"><img src="/imagenes/Adm logo.jpg"></a></li>
+					        <li><a href="#bodegaDos"><img src="/imagenes/Logo Trapezio.PNG"></a></li>
+					        <li><img src="/imagenes/BodegaGieco.jpg"></li>
+					       <li><img src="/imagenes/logovertical.png"></li>
+				        </ul>
+			        </nav>
+		        </div></div>
+              <div id="bodegaUno">
+                <div id="textoBodegaUno"><h4>Vinos criados en Tonel, caracteristica distintiva de la elaboración de Adriana de la Mota</h4></div>
+                <div id="imagenBodegaUno"></div></div>
+              <div id="vinosUno">
+                <div id="imagenVinosUno">
+                <div id="textoVinosUno"><h2>Adriana de la Mota, sucesora de la innovación de los  vinos tal cual hoy los conocemos. Nos presenta 3 vinos muy particulares, con impronta propia.</h2></div></div>
+              <div id="compraVinoUno">
+                <div id="juventus">
+                  <div id="imagenJuventus"></div></div>
+                <div id="succelus">
+                  <div id="imagenSuccelus"></div></div>
+                <div id="plinio">
+                  <div id="imagenPlinio"></div></div>
+                  <div id="up"><a href="#tituloBodega"><img src="/imagenes/Up.jpg"></a></div>
+              </div></div> 
+              <div id="bodegaDos">
+                <div id="textoBodegaDos"><h4>Trapezio es el lugar donde la concepción del Vino, no se rige bajo los estandares habituales, Vino Naranja, Bombarda y mucho más!</h4></div>
+                <div id="imagenBodegaDos"></div></div>
+              <div id="vinosDos">
+                <div id="imagenVinosDos">
+                <div id="textoVinosDos"><h2>Mauro Villarejo, nos sorprende con unos vinos unicos, lo que en Bodega denominan... Imaginación al Poder. No van a para de sorprenderte!</h2></div></div>
+              <div id="compraVinoDos">
+                <div id="boboM">
+                  <div id="imagenBoboM"></div></div>
+                <div id="boboC">
+                  <div id="imagenBoboC"></div></div>
+                <div id="up"><a href="#tituloBodega"><img src="/imagenes/Up.jpg"></a></div>
+              </div></div> 
+          </section>
     <footer class="pie">
-        <img id="logoPie" src="../imagenes/copas.png">
-        <nav id="menuPie">
-            <ul>
-                <li><img src="/imagenes/logocasir.png"></li>
-                <li><img src="/imagenes/logoADM.png"></li>
-                <li><img src="/imagenes/logotrapezio.png"></li>
-                <li><img src="/imagenes/logonoques.png"></li>
-                <li><img src="/imagenes/facebook.png"></li>
-                <li><img src="/imagenes/instag.png"></li>
-                <li><img src="/imagenes/wass.png"></li>
-            </ul>
-        </nav>
+      <img id="logoPie" src="../imagenes/copas.png">
+      <nav id="menuPie">
+        <ul>
+          <li><img src="/imagenes/logocasir.png"></li>
+          <li><img src="/imagenes/logoADM.png"></li>
+          <li><img src="/imagenes/logotrapezio.png"></li>
+          <li><img src="/imagenes/logonoques.png"></li>
+          <li><a href="https://m.facebook.com/story.php?story_fbid=260085575702887&id=104756081235838" target="_blank"><img src="/imagenes/facebook.png"></a></li>
+          <li><a href="https://www.instagram.com/p/CLaYVj5pwN8/?igshid=vkdvt6ldgfi2" target="_blank"><img src="/imagenes/instag.png" ></a></li>
+          <li><img src="/imagenes/wass.png"></li>
+        </ul>
+      </nav>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
